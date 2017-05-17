@@ -154,7 +154,7 @@ public void createGame() throws GameFullException, NoRefereeException, TooFewAth
 				official = participant;
 				isOfficialSelected = true;
 			}else if(participant.getType().equals("officer") && isOfficialSelected == true)
-				throw new WrongTypeException("Wrong Type Found: you are trying to assign a referee as a "+gameSelected);
+				throw new WrongTypeException("Wrong Type Found: you can  assign only one referee to start a game");
 			else if(participant.getType().equals(gameSelected) || participant.getType().equals("super") ){
 				athletesInGame.add(participant);
 			}	
