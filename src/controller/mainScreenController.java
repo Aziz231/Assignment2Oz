@@ -132,7 +132,7 @@ loadAthletes ();
 }
 private void loadDataFromText(){
     File fileName = new File("participants.txt");
-    displayMessage("The data has been imported from ìparticipants.txtî ");
+    displayMessage("The data has been imported from ‚Äúparticipants.txt‚Äù ");
     try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
         String line;
         while((line = reader.readLine()) != null){
@@ -140,7 +140,7 @@ private void loadDataFromText(){
         }   
         
 } catch(IOException e){
-	displayMessage("Cannot find a database connection nor ìparticipants.txtî on the local file system");
+	displayMessage("Cannot find a database connection nor ‚Äúparticipants.txt‚Äù on the local file system");
 }
     loadAthletes ();
 }

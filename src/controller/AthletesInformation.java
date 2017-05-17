@@ -1,5 +1,6 @@
 package controller;
 
+import javafx.beans.property.BooleanProperty;
 
 public class AthletesInformation extends ParticipantsInfromation {
 	
@@ -50,6 +51,20 @@ public class AthletesInformation extends ParticipantsInfromation {
     public int getTime() {
         return time;
     }
+    @Override
+	public BooleanProperty checkedProperty(){ 
+		return super.checked;
+		}
+	
+	@Override
+	public  boolean isChecked(){
+		return super.checked.get();
+	}
+	
+	@Override
+	public void setChecked(boolean value){
+		super.checked.set(value);
+	}
 
 
 }
