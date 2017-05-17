@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.competitionScreenController">
+   <children>
+      <TextArea fx:id="gameInfo" editable="false" layoutX="510.0" layoutY="14.0" prefHeight="375.0" prefWidth="176.0" />
+   </children>
+</AnchorPane>
