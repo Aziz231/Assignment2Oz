@@ -57,9 +57,7 @@ public class AthletesInformation extends ParticipantsInfromation {
 		}
 	
 	@Override
-	public  
-
-{
+	public  boolean isChecked(){
 		return super.checked.get();
 	}
 	
